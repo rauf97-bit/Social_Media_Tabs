@@ -1,0 +1,90 @@
+body,
+html {
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Poppins;
+  overflow-x: hidden;
+}
+
+.mode-toggler {
+  padding: 1rem 2.2rem;
+  border-radius: 15px;
+}
+.green-bcg {
+  background-image: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  ) !important;
+}
+.mode-circle {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  transition: all ease-in-out 0.4s;
+  top: 2px;
+  right: 2px;
+}
+.mode-toggler .light-mode {
+  background: #fff;
+  transform: translateX(-5%);
+  z-index: 3;
+}
+
+.mode-toggler .dark-mode {
+  transform: translateX(-140%);
+  background: black;
+}
+.year {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+.text-muted {
+  letter-spacing: 0.6rem;
+}
+.card {
+  border: transparent !important;
+  background: hsl(225, 100%, 98%) !important;
+  transition: all ease-in-out 0.3s;
+}
+
+.card:hover {
+  background: hsla(228, 34%, 66%, 0.377) !important;
+}
+.card1 {
+  border-top: 5px solid rgba(4, 4, 223, 0.753) !important;
+}
+.card2 {
+  border-top: 5px solid rgba(4, 4, 194, 0.438) !important;
+}
+.card3 {
+  border-top: 5px solid rgba(223, 4, 22, 0.753) !important;
+}
+.card4 {
+  border-top: 5px solid rgba(158, 32, 42, 0.753) !important;
+}
+.card-header {
+  border-bottom: none !important;
+}
+
+.dark {
+  background: hsl(230, 17%, 14%);
+}
+body.dark .container .card {
+  background: hsl(228, 28%, 20%) !important;
+}
+body.dark .container h2,
+body.dark .container h5,
+body.dark .container p.lead {
+  color: #fff !important;
+}
+body.dark hr {
+  background: #fff !important;
+}
+
+body.dark .container .card:hover {
+  background: hsla(229, 42%, 48%, 0.836) !important;
+}
